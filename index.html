@@ -6,6 +6,62 @@
     <title>Online Shopping - Home</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra - Engage with Fashion</title>
+    <style>
+        body {
+            font-family: Times Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            padding: 20px;
+        }
+        .trend-section, .community-section, .engagement-section {
+            margin-bottom: 40px;
+        }
+        .trend-section h2, .community-section h2, .engagement-section h2 {
+            text-align: center;
+            color: #ff3e6c;
+        }
+        .trend-content, .community-content, .engagement-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .content-item {
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            background-color: pink;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .content-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content-item h3 {
+            color: #333;
+        }
+        .content-item p {
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -75,5 +131,78 @@
         </div>
         <p>&copy; 2024 Your Company. All rights reserved.</p>
     </footer>
+   
+    
+   
+    
+    <div class="container">
+        <!-- Trend Identification Section -->
+        <section class="trend-section">
+            <h2>Trending Now</h2>
+            <div class="trend-content">
+                <div class="content-item">
+                    <img src="data:image/jpeg;base64,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" alt="Trend 1">
+                    <h3>Streetwear Style Guide</h3>
+                    <p>Explore the latest streetwear trends that are popular among the younger audience. Get inspired and stay ahead of the fashion curve.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThbBAKAQZorxrDRElRT9PRa1vk16njavwRNQ&s" alt="Trend 2">
+                    <h3>Summer Fashion Forecast</h3>
+                    <p>Check out the must-have summer fashion pieces and how to style them to stay cool and trendy this season.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://i.pinimg.com/474x/ba/0b/3c/ba0b3cc7d4655bae17a2bf67e252b38c.jpg" alt="Trend 3">
+                    <h3>Eco-Friendly Fashion</h3>
+                    <p>Discover sustainable fashion trends that resonate with the eco-conscious younger audience. Learn how to make environmentally friendly choices.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Community Engagement Section -->
+        <section class="community-section">
+            <h2>Join the Fashion Community</h2>
+            <div class="community-content">
+                <div class="content-item">
+                    <img src="https://media.licdn.com/dms/image/D4D12AQF602IFx181vQ/article-cover_image-shrink_720_1280/0/1688625716782?e=2147483647&v=beta&t=a6xSrIBWu0Wp_H_t8Dku6hJqrG-yLrJAJuEjLaVZu9U" alt="UGC 1">
+                    <h3>User-Generated Content</h3>
+                    <p>Share your fashion looks and get featured on our platform. Join the community and inspire others with your unique style.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://designmango.in/upload/blog_images/From-the-Runway-to-Instagram-The-Impact-of-Social-Media-on-Fashion-Influencers-designmango-1687760710_Social%20Media%20Impact.jpg" alt="Social Sharing">
+                    <h3>Social Sharing</h3>
+                    <p>Connect with other fashion enthusiasts on social media. Share your favorite trends and discover new styles from the community.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://media.licdn.com/dms/image/D5622AQHxgiGutQ_20g/feedshare-shrink_800/0/1718166614158?e=2147483647&v=beta&t=Tb84KgfuDukNXegnZ4YqXGjt3tDDbJLdac5pwNHNlcs" alt="Interactive Challenges">
+                    <h3>Interactive Challenges</h3>
+                    <p>Participate in fashion challenges and contests. Show off your creativity and win exciting prizes while engaging with the Myntra community.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Engagement Constructs Section -->
+        <section class="engagement-section">
+            <h2>Daily Engagement Constructs</h2>
+            <div class="engagement-content">
+                <div class="content-item">
+                    <img src="https://glamobserver.com/wp-content/uploads/2022/12/how-do-fashion-trends-start.jpg" alt="Editorial 1">
+                    <h3>Fashion Editorials</h3>
+                    <p>Read daily editorials on the latest fashion trends, style tips, and interviews with fashion influencers. Stay informed and inspired.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://cdn11.bigcommerce.com/s-kfhji/images/stencil/1280x1280/uploaded_images/1.jpg?t=1679379572" alt="Guide 1">
+                    <h3>Style Guides</h3>
+                    <p>Access comprehensive style guides for various occasions. Learn how to pair outfits and accessories to create stunning looks.</p>
+                </div>
+                <div class="content-item">
+                    <img src="https://miro.medium.com/v2/resize:fit:1400/1*-jV9iV0Gt4DGJ4ORabxZKg.jpeg" alt="Forecast 1">
+                    <h3>Trend Forecasts</h3>
+                    <p>Stay ahead of the curve with our trend forecasts. Get insights into upcoming fashion trends and be the first to try new styles.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
 </body>
 </html>
+
